@@ -5,7 +5,7 @@
 
 `default_nettype none
 
-module tt_um_example (
+module tt_um_islam-ihfaz_simple_circuit (
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
     input  wire [7:0] uio_in,   // IOs: Input path
@@ -35,9 +35,10 @@ module tt_um_example (
   // List all unused inputs to prevent warnings
     wire _unused = &{ena, clk, rst_n, ui_in[3], ui_in[4], ui_in[5], ui_in[6], ui_in[7], uio_in 1'b0};
 
-module smpl_circuit(A,B,C,x,y);
-input A,B,C;
-output x,y;
+// module smpl_circuit(A,B,C,x,y);
+// input A,B,C;
+// output x,y;
+
 wire e;
 and g1(e,A,B);
 not g2(y, C);
